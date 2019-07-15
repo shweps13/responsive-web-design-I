@@ -271,6 +271,12 @@ li {
 	.circle {
 		display: none;
 	}
+	.board {
+		/* background-color: brown; */
+		display: block;
+		margin: 0 0 5% 7.5%;
+		width: 80%;
+	}
 	.maintop {
 		justify-content: center;
 	}
