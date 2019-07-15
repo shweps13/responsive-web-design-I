@@ -202,7 +202,7 @@ footer nav a:hover {
     width: 100%;
     margin-bottom: 2%;
 }
-.button {
+a[type="button"]{
 	background-color: white; 
 	border: 2px solid black;
 	border-radius: 10px;
@@ -211,7 +211,7 @@ footer nav a:hover {
 	padding: 2% 8%;
 	font-size: 15px;
 }
-.button:hover {
+a[type="button"]:hover {
     background-color: black;
     color: white;
 }
@@ -358,7 +358,7 @@ footer nav a:hover {
         margin-bottom: 3%;
         padding: 2% 0% 7% 0%;
     }
-    .block h3, .block p, .block .button {
+    .block h3, .block p, .block a[type="button"] {
         margin-left: 3%;
         margin-right: 3%;
     }
