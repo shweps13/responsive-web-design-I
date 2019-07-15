@@ -223,3 +223,12 @@ footer nav a:hover {
 footer nav a:hover {
 	color: lightgray;
 }
+
+/* Responsive things are here */
+
+/* Tablet version */
+@media screen and (max-width: 800px) {
+    
+
+    
+}

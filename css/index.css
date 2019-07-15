@@ -81,6 +81,8 @@ h1, h2, h3, h4, h5 {
 	/* background-color: red;	 */
 	display: flex;
 	margin-left: 5%; 
+	width: 50%;
+	justify-content: space-between;
 }
 .top nav a{
 	/* background-color: purple;	 */
@@ -93,17 +95,18 @@ h1, h2, h3, h4, h5 {
 	color: grey;
 	text-decoration: none;
 }
-.top a .logo {
-	/* background-color: blue;	 */
+.logotop {
 	display: flex;
-	margin-right: 0%; 
-	width: 100%;
+	/* background-color: aqua; */
+	padding: 0.9% 5% 5% 0;
 }
+
 .top .logo1{
 	/* background-color: blue;	 */
 	display: flex;
 	margin-right: 5%; 
 	width: 20%;
+	padding-top: 5%;
 }
 div a:hover {
 	color: black;
@@ -301,6 +304,8 @@ a[type="buttontop"] {
 		/* background-color: red;	 */
 		display: flex;
 		margin-left: 3%; 
+		margin-right: 3%; 
+		width: 100%;
 	}
 	.top nav a{
 		/* background-color: purple; */
