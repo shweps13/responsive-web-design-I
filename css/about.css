@@ -270,6 +270,22 @@ footer nav a:hover {
     p {
         font-size: 12px;
     }
+    /* Middle content */
+    p {
+        font-size: 15px;
+    }
+    .container {
+        width: 85%;
+    }
+    .index-header-img {
+        width: 85%;
+
+    }
+    .block {
+        width: 45%;
+        margin-bottom: 3%;
+        padding: 2% 0% 5% 0%;
+    }
 
 }
 
@@ -334,13 +350,22 @@ footer nav a:hover {
     }
     .mid-content {
         display: block;
+        width: 100%;
+        margin: 0;
     }
     .block {
         width: 100%;
         margin-bottom: 3%;
-        padding: 2% 0% 5% 0%;
+        padding: 2% 0% 7% 0%;
+    }
+    .block h3, .block p, .block .button {
+        margin-left: 3%;
+        margin-right: 3%;
     }
     .down-content h3, .down-content p { 
         text-align: center;
+    }
+    .top-content {
+        border-bottom: 1px solid white;
     }
 }
