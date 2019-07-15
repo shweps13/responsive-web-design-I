@@ -272,3 +272,75 @@ footer nav a:hover {
     }
 
 }
+
+/* Mobile version */
+@media screen and (max-width: 500px) {
+    /* Header and navigation */
+    .top  {
+        /* background-color: yellow;	 */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 2% 0 3% 0;
+        
+    }
+    .top nav {
+        /* background-color: red;	 */
+        display: block;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    .top nav a{
+        /* background-color: purple;	 */
+        display: flex;
+        color: grey;
+        text-decoration: none;
+        padding: 5% 5% 5% 40%;
+        border-top: 1px solid grey;
+        margin: 0;
+        
+    }
+    .top nav a:last-child{
+        border-bottom: 1px solid grey;    
+    }
+
+    .top a .logo {
+        /* background-color: blue; */
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5%;
+        
+    }
+    .top .logo1{
+        /* background-color: purple;	 */
+        display: flex;
+        width: 50%;
+        margin-left: 25%; 
+    }
+    
+    /* Middle content */
+    p {
+        font-size: 15px;
+    }
+    .index-header-img {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .mid-content {
+        display: block;
+    }
+    .block {
+        width: 100%;
+        margin-bottom: 3%;
+        padding: 2% 0% 5% 0%;
+    }
+    .down-content h3, .down-content p { 
+        text-align: center;
+    }
+}
