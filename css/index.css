@@ -265,6 +265,8 @@ li {
 }
 
 /* responsive things are here */
+
+/* Tablet version */
 @media screen and (max-width: 800px) {
 	.circle {
 		display: none;
@@ -303,6 +305,8 @@ li {
 		color: grey;
 		text-decoration: none;
 	}
+	
+	/* Text sizing */
 	h3 {
 		font-size: 30px;
 	}
@@ -314,3 +318,114 @@ li {
 	}
 }
 
+/* Mobile version  */
+@media screen and (max-width: 500px) {
+	/* header */
+	.circle {
+		display: none;
+	}
+	.maintop {
+		justify-content: center;
+	}
+	.top  {
+		/* background-color: yellow;	 */
+		display: flex;
+		flex-direction: column-reverse;
+		margin-top: 1%;
+		justify-content: center;
+	}
+	.top a .logo {
+		/* background-color: blue;	 */
+		display: flex;
+		justify-content: center;
+	}
+	.top .logo1{
+		/* background-color: green;	 */
+		display: flex;
+		justify-content: center;
+		width: 40%;
+		margin: 5% 30% 5% 30%;
+	}
+	.top nav {
+		/* background-color: red;	 */
+		display: flex;
+		margin-left: 0; 
+		flex-direction: column;
+		width: 100%;
+	}
+	.top nav a{
+		/* background-color: purple; */
+		/* padding: 1%;
+		padding-top: 5%;
+		margin-right: 8%; */
+		color: grey;
+		text-decoration: none;
+		text-align: center;
+		border-top: 1px solid grey;
+		width: 100%;
+		padding-bottom: 5%;
+		font-size: 20px;	
+	}
+	.top nav a:last-child{
+		border-bottom: 1px solid grey;
+	}
+
+	/* Main title */
+	.maintop {
+		display: flex;
+		justify-content: center;
+		/* background-color: aqua; */
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	.board {
+		/* background-color: brown; */
+		display: block;
+		margin: 5% 7.5% 5% 7.5%;
+		width: 80%;
+	}
+	.board h2{
+		font-size: 60px;
+		text-align: center;
+	}
+
+	/* Text sizing */
+	h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 15px;
+	}
+	p {
+		font-size: 15px;
+	}
+
+	/* Main content block1 */
+	.features {
+		display: block;
+		margin-bottom: 5%;
+	}
+	.about {
+		display: block;
+	}
+	.block1 {
+		flex-wrap: wrap;
+	}
+
+	/* Main content block2*/
+	.content2 {
+		display: block;
+		margin-bottom: 5%;
+	}
+	.block2 {
+		flex-wrap: wrap;
+	}
+	.content2:nth-child(2) {
+		background-color: white;
+		margin: 0 0 5% 0;
+	}
+	/* Footer style */
+	.contact {
+		padding-top: 5%;
+	}
+}
