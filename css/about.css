@@ -1,0 +1,372 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.top-content {
+    display: block;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+    /* margin-bottom: 20px; */
+    border-bottom: 1px dashed black;
+    margin: 0 3% 0 3%;
+}
+
+.top-content .text-container {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 2%;  
+}
+
+.middle-content {
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.middle-content h2 {
+    padding: 0 2%;
+    margin-bottom: 0;
+}
+
+
+.bottom-content {
+    display: flex;
+    margin: 0 2% 20px;
+    justify-content: space-around;
+}
+
+.bottom-content .text-container {
+    padding-right: 4%;
+}
+
+.bottom-content .text-container:last-child {
+    padding-right: 0;
+}
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+.top  {
+	/* background-color: yellow;	 */
+	display: flex;
+	justify-content: space-between;
+    margin: 2% 20% 3% 20%;
+    
+}
+.top nav {
+	/* background-color: red;	 */
+	display: flex;
+    width: 80%;
+    
+}
+.top nav a{
+	/* background-color: green;	 */
+    display: inline-block;
+    flex-direction: row;
+	padding-top: 4%;
+	margin: 0 4% 0 2%;
+	color: grey;
+    text-decoration: none;
+    
+}
+.top a .logo {
+	/* background-color: blue; */
+	display: flex;
+	margin-right: 0%; 
+    width: 100%;
+    height: 100%;
+}
+.top .logo1{
+	/* background-color: purple;	 */
+	display: flex;
+	margin-right: 5%; 
+    width: 20%;
+}
+div a:hover {
+	color: black;
+}
+.index-header-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+footer nav a:hover {
+	color: lightgray;
+}
+.mid-content {
+    display: flex;
+    /* background-color: green; */
+	flex-wrap: wrap;
+	margin: 1% 2% 3% 2%;
+	justify-content: space-between;
+}
+.block {
+	/* background-color: rgb(228, 228, 228); */
+	width: 48%;
+	margin-bottom: 3%;
+    padding: 2% 0% 3% 0%;
+    margin: 1,5%;
+    border-bottom: 1px dashed black;
+}
+.block p {
+	margin-bottom: 6%;
+}
+.block img{
+    width: 100%;
+    margin-bottom: 2%;
+}
+a[type="button"]{
+	background-color: white; 
+	border: 2px solid black;
+	border-radius: 10px;
+	color: black;
+	text-decoration: none;
+	padding: 2% 8%;
+	font-size: 15px;
+}
+a[type="button"]:hover {
+    background-color: black;
+    color: white;
+}
+.down-content {
+    /* background-color: aqua; */
+    margin-bottom: 5%;
+    padding: 0 2% 0 2%;
+}
+footer nav a:hover {
+	color: lightgray;
+}
+
+/* Responsive things are here */
+
+/* Tablet version */
+@media screen and (max-width: 800px) {
+    .top  {
+        /* background-color: yellow;	 */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 2% 20% 3% 20%;
+        
+    }
+    .top nav {
+        /* background-color: red;	 */
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        
+    }
+    .top nav a{
+        /* background-color: purple;	 */
+        display: flex;
+        /* justify-content: space-between; */
+        padding-top: 4%;
+        color: grey;
+        text-decoration: none;
+        
+    }
+    .top a .logo {
+        /* background-color: blue; */
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .top .logo1{
+        /* background-color: purple;	 */
+        display: flex;
+        width: 40%;
+        margin-left: 30%; 
+    }
+    p {
+        font-size: 12px;
+    }
+    /* Middle content */
+    p {
+        font-size: 15px;
+    }
+    .container {
+        width: 85%;
+    }
+    .index-header-img {
+        width: 85%;
+
+    }
+    .block {
+        width: 45%;
+        margin-bottom: 3%;
+        padding: 2% 0% 5% 0%;
+    }
+
+}
+
+/* Mobile version */
+@media screen and (max-width: 500px) {
+    /* Header and navigation */
+    .top  {
+        /* background-color: yellow;	 */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 2% 0 3% 0;
+        
+    }
+    .top nav {
+		/* background-color: red;	 */
+		display: flex;
+		margin-left: 0; 
+		flex-direction: column;
+		width: 100%;
+	}
+	.top nav a{
+        color: grey;
+        display: inline;
+		text-decoration: none;
+		text-align: center; 
+		border-top: 1px solid grey;
+		width: 100%;
+		padding-bottom: 5%;
+        font-size: 20px;	
+        margin-left: 0;
+	}
+    .top nav a:last-child{
+        border-bottom: 1px solid grey;    
+    }
+
+    .top a .logo {
+        /* background-color: blue; */
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5%;
+        
+    }
+    .top .logo1{
+        /* background-color: purple;	 */
+        display: flex;
+        width: 50%;
+        margin-left: 25%; 
+    }
+    
+    /* Middle content */
+    p {
+        font-size: 15px;
+    }
+    .index-header-img {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .mid-content {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+    .block {
+        width: 100%;
+        margin-bottom: 3%;
+        padding: 2% 0% 7% 0%;
+    }
+    .block h3, .block p, .block a[type="button"] {
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .down-content h3, .down-content p { 
+        text-align: center;
+    }
+    .top-content {
+        border-bottom: 1px solid white;
+    }
+}
